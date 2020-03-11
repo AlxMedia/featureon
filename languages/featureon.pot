@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MagazinerTwo\n"
+"Project-Id-Version: Featureon\n"
 "POT-Creation-Date: 2019-07-30 14:10+0200\n"
 "PO-Revision-Date: 2018-09-21 21:27+0100\n"
 "Last-Translator: \n"

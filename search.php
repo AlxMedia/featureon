@@ -13,9 +13,9 @@
 					<div class="pad group">
 						
 						<div class="notebox">
-							<?php esc_html_e('For the term','magazinertwo'); ?> "<span><?php echo get_search_query(); ?></span>".
+							<?php esc_html_e('For the term','featureon'); ?> "<span><?php echo get_search_query(); ?></span>".
 							<?php if ( !have_posts() ): ?>
-								<?php esc_html_e('Please try another search:','magazinertwo'); ?>
+								<?php esc_html_e('Please try another search:','featureon'); ?>
 							<?php endif; ?>
 							<div class="search-again">
 								<?php get_search_form(); ?>

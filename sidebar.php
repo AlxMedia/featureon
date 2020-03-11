@@ -1,12 +1,12 @@
 <?php 
-	$sidebar = magazinertwo_sidebar_primary();
-	$layout = magazinertwo_layout_class();
+	$sidebar = featureon_sidebar_primary();
+	$layout = featureon_layout_class();
 	if ( $layout != 'col-1c'):
 ?>
 	
 	<div class="sidebar s1">
 		
-		<a class="sidebar-toggle" title="<?php esc_attr_e('Expand Sidebar','magazinertwo'); ?>"><i class="fa icon-sidebar-toggle"></i></a>
+		<a class="sidebar-toggle" title="<?php esc_attr_e('Expand Sidebar','featureon'); ?>"><i class="fa icon-sidebar-toggle"></i></a>
 		
 		<div class="sidebar-content">
 			

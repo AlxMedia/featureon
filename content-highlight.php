@@ -4,7 +4,7 @@
 	<a class="featured-link" href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 	
 	<?php if ( has_post_thumbnail() ): ?>
-		<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'magazinertwo-medium' ); ?>
+		<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'featureon-medium' ); ?>
 		<img src="<?php echo $image[0]; ?>" alt="<?php the_title_attribute(); ?>" />
 	<?php elseif ( get_theme_mod('placeholder','on') == 'on' ): ?>
 		<img src="<?php echo get_template_directory_uri(); ?>/img/thumb-medium.png" alt="<?php the_title_attribute(); ?>" />

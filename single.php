@@ -6,7 +6,7 @@
 	
 	<div class="image-container">
 		<?php if ( has_post_thumbnail() ) {	
-			the_post_thumbnail('magazinertwo-huge'); 
+			the_post_thumbnail('featureon-huge'); 
 			$caption = get_post(get_post_thumbnail_id())->post_excerpt;
 			if ( isset($caption) && $caption ) echo '<div class="image-caption">'.$caption.'</div>';
 		} ?>
@@ -27,7 +27,7 @@
 								<div class="post-inner group">
 									
 									<h1 class="post-title ontop"><?php the_title(); ?></h1>
-									<p class="post-byline"><?php echo get_avatar(get_the_author_meta('user_email'),'64'); ?><?php esc_html_e('by','magazinertwo'); ?> <?php the_author_posts_link(); ?> &middot; <?php the_time( get_option('date_format') ); ?></p>
+									<p class="post-byline"><?php echo get_avatar(get_the_author_meta('user_email'),'64'); ?><?php esc_html_e('by','featureon'); ?> <?php the_author_posts_link(); ?> &middot; <?php the_time( get_option('date_format') ); ?></p>
 									
 									<?php if( get_post_format() ) { get_template_part('inc/post-formats'); } ?>
 									
@@ -36,10 +36,10 @@
 									<div class="entry themeform">	
 										<div class="entry-inner">
 											<?php the_content(); ?>
-											<?php wp_link_pages(array('before'=>'<div class="post-pages">'.esc_html__('Pages:','magazinertwo'),'after'=>'</div>')); ?>
+											<?php wp_link_pages(array('before'=>'<div class="post-pages">'.esc_html__('Pages:','featureon'),'after'=>'</div>')); ?>
 										</div>
 										<div class="clear"></div>
-										<?php the_tags('<p class="post-tags"><span>'.esc_html__('Tags:','magazinertwo').'</span> ','','</p>'); ?>
+										<?php the_tags('<p class="post-tags"><span>'.esc_html__('Tags:','featureon').'</span> ','','</p>'); ?>
 										<?php do_action( 'alx_ext_sharrre' ); ?>
 										
 									</div><!--/.entry-->
@@ -53,7 +53,7 @@
 						<?php if ( ( get_theme_mod( 'author-bio', 'on' ) == 'on' ) && get_the_author_meta( 'description' ) ): ?>
 							<div class="author-bio">
 								<div class="bio-avatar"><?php echo get_avatar(get_the_author_meta('user_email'),'128'); ?></div>
-								<p class="bio-name"><?php esc_html_e('Written by','magazinertwo'); ?> <?php the_author_posts_link(); ?></p>
+								<p class="bio-name"><?php esc_html_e('Written by','featureon'); ?> <?php the_author_posts_link(); ?></p>
 								<p class="bio-desc"><?php the_author_meta('description'); ?></p>
 								<div class="clear"></div>
 							</div>

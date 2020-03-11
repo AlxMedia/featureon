@@ -14,7 +14,7 @@
 
 <?php if ( function_exists( 'wp_body_open' ) ) { wp_body_open(); } ?>
 
-<a class="skip-link screen-reader-text" href="#page"><?php _e( 'Skip to content', 'magazinertwo' ); ?></a>
+<a class="skip-link screen-reader-text" href="#page"><?php _e( 'Skip to content', 'featureon' ); ?></a>
 
 <div id="wrapper">
 
@@ -47,7 +47,7 @@
 			<div class="container group">
 				<div class="group pad">
 					<?php if ( get_theme_mod( 'header-social', 'on' ) == 'on' ): ?>
-						<?php magazinertwo_social_links() ; ?>
+						<?php featureon_social_links() ; ?>
 					<?php endif; ?>
 					<?php if ( get_theme_mod( 'header-search', 'on' ) == 'on' ): ?>
 						<div class="toggle-search"><i class="fas fa-search"></i></div>
@@ -62,7 +62,7 @@
 			
 			<div class="container group">
 				<div class="group pad">
-					<?php echo magazinertwo_site_title(); ?>
+					<?php echo featureon_site_title(); ?>
 					<?php if ( display_header_text() == true ): ?>
 						<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 					<?php endif; ?>

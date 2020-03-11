@@ -15,16 +15,16 @@
 include( get_template_directory() . '/functions/kirki/kirki.php' );
 
 // Load theme updater functions
-function magazinertwo_theme_updater() {
+function featureon_theme_updater() {
 	require( get_template_directory() . '/updater/theme-updater.php' );
 }
-add_action( 'after_setup_theme', 'magazinertwo_theme_updater' );
+add_action( 'after_setup_theme', 'featureon_theme_updater' );
 
-if ( ! function_exists( 'magazinertwo_load' ) ) {
+if ( ! function_exists( 'featureon_load' ) ) {
 	
-	function magazinertwo_load() {
+	function featureon_load() {
 		// Load theme languages
-		load_theme_textdomain( 'magazinertwo', get_template_directory().'/languages' );
+		load_theme_textdomain( 'featureon', get_template_directory().'/languages' );
 		
 		// Load theme options and meta boxes
 		include( get_template_directory() . '/functions/theme-options.php' );
@@ -38,7 +38,7 @@ if ( ! function_exists( 'magazinertwo_load' ) ) {
 	}
 	
 }
-add_action( 'after_setup_theme', 'magazinertwo_load' );	
+add_action( 'after_setup_theme', 'featureon_load' );	
 
 
 /* ------------------------------------------------------------------------- *
@@ -51,9 +51,9 @@ add_action( 'after_setup_theme', 'magazinertwo_load' );
 
 /*  Theme setup
 /* ------------------------------------ */
-if ( ! function_exists( 'magazinertwo_setup' ) ) {
+if ( ! function_exists( 'featureon_setup' ) ) {
 	
-	function magazinertwo_setup() {		
+	function featureon_setup() {		
 		// Enable title tag
 		add_theme_support( 'title-tag' );
 		
@@ -73,11 +73,11 @@ if ( ! function_exists( 'magazinertwo_setup' ) ) {
 		add_theme_support( 'woocommerce' );
 		
 		// Thumbnail sizes
-		add_image_size( 'magazinertwo-small', 160, 160, true );
-		add_image_size( 'magazinertwo-medium', 520, 293, true );
-		add_image_size( 'magazinertwo-large', 720, 405, true );
-		add_image_size( 'magazinertwo-huge', 1280, 620, true );
-		add_image_size( 'magazinertwo-square', 320, 320, true );
+		add_image_size( 'featureon-small', 160, 160, true );
+		add_image_size( 'featureon-medium', 520, 293, true );
+		add_image_size( 'featureon-large', 720, 405, true );
+		add_image_size( 'featureon-huge', 1280, 620, true );
+		add_image_size( 'featureon-square', 320, 320, true );
 		
 		// Thumbnail sizes custom widgets
 		add_image_size( 'alx-small', 160, 160, true );
@@ -85,22 +85,22 @@ if ( ! function_exists( 'magazinertwo_setup' ) ) {
 		
 		// Custom menu areas
 		register_nav_menus( array(
-			'mobile' 	=> esc_html__( 'Mobile', 'magazinertwo' ),
-			'topbar' 	=> esc_html__( 'Topbar', 'magazinertwo' ),
-			'header' 	=> esc_html__( 'Header', 'magazinertwo' ),
-			'footer' 	=> esc_html__( 'Footer', 'magazinertwo' ),
+			'mobile' 	=> esc_html__( 'Mobile', 'featureon' ),
+			'topbar' 	=> esc_html__( 'Topbar', 'featureon' ),
+			'header' 	=> esc_html__( 'Header', 'featureon' ),
+			'footer' 	=> esc_html__( 'Footer', 'featureon' ),
 		) );
 	}
 	
 }
-add_action( 'after_setup_theme', 'magazinertwo_setup' );
+add_action( 'after_setup_theme', 'featureon_setup' );
 
 
 /*  Custom logo
 /* ------------------------------------ */
-if ( ! function_exists( 'magazinertwo_custom_logo' ) ) {
+if ( ! function_exists( 'featureon_custom_logo' ) ) {
 	
-	function magazinertwo_custom_logo() {
+	function featureon_custom_logo() {
 		$defaults = array(
 			'height'		=> 120,
 			'width'			=> 400,
@@ -112,14 +112,14 @@ if ( ! function_exists( 'magazinertwo_custom_logo' ) ) {
 	}
 
 }	
-add_action( 'after_setup_theme', 'magazinertwo_custom_logo' );
+add_action( 'after_setup_theme', 'featureon_custom_logo' );
 
 
 /*  Custom header
 /* ------------------------------------ */
-if ( ! function_exists( 'magazinertwo_custom_header' ) ) {
+if ( ! function_exists( 'featureon_custom_header' ) ) {
 	
-	function magazinertwo_custom_header() {
+	function featureon_custom_header() {
 		$args = array(
 			'default-image'	=> false,
 			'default-text'	=> false,
@@ -132,90 +132,90 @@ if ( ! function_exists( 'magazinertwo_custom_header' ) ) {
 	}
 	
 }
-add_action( 'after_setup_theme', 'magazinertwo_custom_header' );
+add_action( 'after_setup_theme', 'featureon_custom_header' );
 
 
 /*  Custom background
 /* ------------------------------------ */
-if ( ! function_exists( 'magazinertwo_custom_background' ) ) {
+if ( ! function_exists( 'featureon_custom_background' ) ) {
 	
-	function magazinertwo_custom_background() {
+	function featureon_custom_background() {
 		$args = array();
 		add_theme_support( 'custom-background', $args );
 	}
 	
 }
-add_action( 'after_setup_theme', 'magazinertwo_custom_background' );
+add_action( 'after_setup_theme', 'featureon_custom_background' );
 
 
 /*  Deregister
 /* ------------------------------------ */
-if ( ! function_exists( 'magazinertwo_deregister' ) ) {
+if ( ! function_exists( 'featureon_deregister' ) ) {
 	
-	function magazinertwo_deregister() {
+	function featureon_deregister() {
 		wp_deregister_style( 'wp-pagenavi' );
 		wp_deregister_style( 'social-count-plus' );
 	}
 	
 }
-add_action( 'wp_enqueue_scripts', 'magazinertwo_deregister', 100 );
+add_action( 'wp_enqueue_scripts', 'featureon_deregister', 100 );
 
 
 /*  Register sidebars
 /* ------------------------------------ */	
-if ( ! function_exists( 'magazinertwo_sidebars' ) ) {
+if ( ! function_exists( 'featureon_sidebars' ) ) {
 
-	function magazinertwo_sidebars()	{
-		register_sidebar(array( 'name' => esc_html__('Primary','magazinertwo'),'id' => 'primary','description' => esc_html__("Normal full width sidebar","magazinertwo"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>'));
-		register_sidebar(array( 'name' => esc_html__('Secondary','magazinertwo'),'id' => 'secondary','description' => esc_html__("Normal full width sidebar","magazinertwo"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>'));
+	function featureon_sidebars()	{
+		register_sidebar(array( 'name' => esc_html__('Primary','featureon'),'id' => 'primary','description' => esc_html__("Normal full width sidebar","featureon"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>'));
+		register_sidebar(array( 'name' => esc_html__('Secondary','featureon'),'id' => 'secondary','description' => esc_html__("Normal full width sidebar","featureon"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>'));
 		
-		if ( get_theme_mod('header-ads') == 'on' ) { register_sidebar(array( 'name' => esc_html__('Header Ads','magazinertwo'),'id' => 'header-ads', 'description' => esc_html("Header ads area","magazinertwo"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
-		if ( get_theme_mod('footer-ads') == 'on' ) { register_sidebar(array( 'name' => esc_html__('Footer Ads',"magazinertwo"),'id' => 'footer-ads', 'description' => esc_html__("Footer ads area","magazinertwo"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
+		if ( get_theme_mod('header-ads') == 'on' ) { register_sidebar(array( 'name' => esc_html__('Header Ads','featureon'),'id' => 'header-ads', 'description' => esc_html("Header ads area","featureon"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
+		if ( get_theme_mod('footer-ads') == 'on' ) { register_sidebar(array( 'name' => esc_html__('Footer Ads',"featureon"),'id' => 'footer-ads', 'description' => esc_html__("Footer ads area","featureon"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
 		
-		if ( get_theme_mod('frontpage-widgets-top') == 'on' ) { register_sidebar(array( 'name' => esc_html__('Frontpage Top 1','magazinertwo'),'id' => 'frontpage-top-1', 'description' => esc_html__("Frontpage area","magazinertwo"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
-		if ( get_theme_mod('frontpage-widgets-top') == 'on' ) { register_sidebar(array( 'name' => esc_html__('Frontpage Top 2','magazinertwo'),'id' => 'frontpage-top-2', 'description' => esc_html__("Frontpage area","magazinertwo"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
-		if ( get_theme_mod('frontpage-widgets-bottom') == 'on' ) { register_sidebar(array( 'name' => esc_html__('Frontpage Bottom 1','magazinertwo'),'id' => 'frontpage-bottom-1', 'description' => esc_html__("Frontpage area","magazinertwo"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
-		if ( get_theme_mod('frontpage-widgets-bottom') == 'on' ) { register_sidebar(array( 'name' => esc_html__('Frontpage Bottom 2','magazinertwo'),'id' => 'frontpage-bottom-2', 'description' => esc_html__("Frontpage area","magazinertwo"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
+		if ( get_theme_mod('frontpage-widgets-top') == 'on' ) { register_sidebar(array( 'name' => esc_html__('Frontpage Top 1','featureon'),'id' => 'frontpage-top-1', 'description' => esc_html__("Frontpage area","featureon"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
+		if ( get_theme_mod('frontpage-widgets-top') == 'on' ) { register_sidebar(array( 'name' => esc_html__('Frontpage Top 2','featureon'),'id' => 'frontpage-top-2', 'description' => esc_html__("Frontpage area","featureon"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
+		if ( get_theme_mod('frontpage-widgets-bottom') == 'on' ) { register_sidebar(array( 'name' => esc_html__('Frontpage Bottom 1','featureon'),'id' => 'frontpage-bottom-1', 'description' => esc_html__("Frontpage area","featureon"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
+		if ( get_theme_mod('frontpage-widgets-bottom') == 'on' ) { register_sidebar(array( 'name' => esc_html__('Frontpage Bottom 2','featureon'),'id' => 'frontpage-bottom-2', 'description' => esc_html__("Frontpage area","featureon"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
 
-		if ( get_theme_mod('footer-widgets') >= '1' ) { register_sidebar(array( 'name' => esc_html__('Footer 1','magazinertwo'),'id' => 'footer-1', 'description' => esc_html__("Widgetized footer","magazinertwo"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
-		if ( get_theme_mod('footer-widgets') >= '2' ) { register_sidebar(array( 'name' => esc_html__('Footer 2','magazinertwo'),'id' => 'footer-2', 'description' => esc_html__("Widgetized footer","magazinertwo"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
-		if ( get_theme_mod('footer-widgets') >= '3' ) { register_sidebar(array( 'name' => esc_html__('Footer 3','magazinertwo'),'id' => 'footer-3', 'description' => esc_html__("Widgetized footer","magazinertwo"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
-		if ( get_theme_mod('footer-widgets') >= '4' ) { register_sidebar(array( 'name' => esc_html__('Footer 4','magazinertwo'),'id' => 'footer-4', 'description' => esc_html__("Widgetized footer","magazinertwo"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
+		if ( get_theme_mod('footer-widgets') >= '1' ) { register_sidebar(array( 'name' => esc_html__('Footer 1','featureon'),'id' => 'footer-1', 'description' => esc_html__("Widgetized footer","featureon"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
+		if ( get_theme_mod('footer-widgets') >= '2' ) { register_sidebar(array( 'name' => esc_html__('Footer 2','featureon'),'id' => 'footer-2', 'description' => esc_html__("Widgetized footer","featureon"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
+		if ( get_theme_mod('footer-widgets') >= '3' ) { register_sidebar(array( 'name' => esc_html__('Footer 3','featureon'),'id' => 'footer-3', 'description' => esc_html__("Widgetized footer","featureon"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
+		if ( get_theme_mod('footer-widgets') >= '4' ) { register_sidebar(array( 'name' => esc_html__('Footer 4','featureon'),'id' => 'footer-4', 'description' => esc_html__("Widgetized footer","featureon"), 'before_widget' => '<div id="%1$s" class="widget %2$s">','after_widget' => '</div>','before_title' => '<h3 class="group"><span>','after_title' => '</span></h3>')); }
 	}
 	
 }
-add_action( 'widgets_init', 'magazinertwo_sidebars' );
+add_action( 'widgets_init', 'featureon_sidebars' );
 
 
 /*  Enqueue javascript
 /* ------------------------------------ */	
-if ( ! function_exists( 'magazinertwo_scripts' ) ) {
+if ( ! function_exists( 'featureon_scripts' ) ) {
 	
-	function magazinertwo_scripts() {
-		wp_enqueue_script( 'magazinertwo-flexslider', get_template_directory_uri() . '/js/jquery.flexslider.min.js', array( 'jquery' ),'', false );
-		wp_enqueue_script( 'magazinertwo-fitvids', get_template_directory_uri() . '/js/jquery.fitvids.js', array( 'jquery' ),'', true );
-		wp_enqueue_script( 'magazinertwo-owl-carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', array( 'jquery' ),'', true );
-		wp_enqueue_script( 'magazinertwo-scripts', get_template_directory_uri() . '/js/scripts.js', array( 'jquery' ),'', true );
+	function featureon_scripts() {
+		wp_enqueue_script( 'featureon-flexslider', get_template_directory_uri() . '/js/jquery.flexslider.min.js', array( 'jquery' ),'', false );
+		wp_enqueue_script( 'featureon-fitvids', get_template_directory_uri() . '/js/jquery.fitvids.js', array( 'jquery' ),'', true );
+		wp_enqueue_script( 'featureon-owl-carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', array( 'jquery' ),'', true );
+		wp_enqueue_script( 'featureon-scripts', get_template_directory_uri() . '/js/scripts.js', array( 'jquery' ),'', true );
 		if ( is_singular() && get_option( 'thread_comments' ) )	{ wp_enqueue_script( 'comment-reply' ); }
 	}  
 	
 }
-add_action( 'wp_enqueue_scripts', 'magazinertwo_scripts' ); 
+add_action( 'wp_enqueue_scripts', 'featureon_scripts' ); 
 
 
 /*  Enqueue css
 /* ------------------------------------ */	
-if ( ! function_exists( 'magazinertwo_styles' ) ) {
+if ( ! function_exists( 'featureon_styles' ) ) {
 	
-	function magazinertwo_styles() {
-		wp_enqueue_style( 'magazinertwo-style', get_stylesheet_uri() );
-		if ( get_theme_mod('responsive','on') =='on' ) { wp_enqueue_style( 'magazinertwo-responsive', get_template_directory_uri().'/responsive.css' ); }
-		if ( get_theme_mod('dark','off') == 'on' ) { wp_enqueue_style( 'magazinertwo-dark', get_template_directory_uri().'/dark.css' ); }
-		wp_enqueue_style( 'magazinertwo-font-awesome', get_template_directory_uri().'/fonts/all.min.css' );
+	function featureon_styles() {
+		wp_enqueue_style( 'featureon-style', get_stylesheet_uri() );
+		if ( get_theme_mod('responsive','on') =='on' ) { wp_enqueue_style( 'featureon-responsive', get_template_directory_uri().'/responsive.css' ); }
+		if ( get_theme_mod('dark','off') == 'on' ) { wp_enqueue_style( 'featureon-dark', get_template_directory_uri().'/dark.css' ); }
+		wp_enqueue_style( 'featureon-font-awesome', get_template_directory_uri().'/fonts/all.min.css' );
 	}
 	
 }
-add_action( 'wp_enqueue_scripts', 'magazinertwo_styles' );
+add_action( 'wp_enqueue_scripts', 'featureon_styles' );
 
 
 /* ------------------------------------------------------------------------- *
@@ -224,9 +224,9 @@ add_action( 'wp_enqueue_scripts', 'magazinertwo_styles' );
 
 /*  Layout class
 /* ------------------------------------ */
-if ( ! function_exists( 'magazinertwo_layout_class' ) ) {
+if ( ! function_exists( 'featureon_layout_class' ) ) {
 	
-	function magazinertwo_layout_class() {
+	function featureon_layout_class() {
 		// Default layout
 		$layout = 'col-3cm';
 		$default = 'col-3cm';
@@ -266,9 +266,9 @@ if ( ! function_exists( 'magazinertwo_layout_class' ) ) {
 
 /*  Dynamic sidebar primary
 /* ------------------------------------ */
-if ( ! function_exists( 'magazinertwo_sidebar_primary' ) ) {
+if ( ! function_exists( 'featureon_sidebar_primary' ) ) {
 	
-	function magazinertwo_sidebar_primary() {
+	function featureon_sidebar_primary() {
 		// Default sidebar
 		$sidebar = 'primary';
 
@@ -300,9 +300,9 @@ if ( ! function_exists( 'magazinertwo_sidebar_primary' ) ) {
 
 /*  Dynamic sidebar secondary
 /* ------------------------------------ */
-if ( ! function_exists( 'magazinertwo_sidebar_secondary' ) ) {
+if ( ! function_exists( 'featureon_sidebar_secondary' ) ) {
 
-	function magazinertwo_sidebar_secondary() {
+	function featureon_sidebar_secondary() {
 		// Default sidebar
 		$sidebar = 'secondary';
 
@@ -334,9 +334,9 @@ if ( ! function_exists( 'magazinertwo_sidebar_secondary' ) ) {
 
 /*  Social links
 /* ------------------------------------ */
-if ( ! function_exists( 'magazinertwo_social_links' ) ) {
+if ( ! function_exists( 'featureon_social_links' ) ) {
 
-	function magazinertwo_social_links() {
+	function featureon_social_links() {
 		if ( !get_theme_mod('social-links') =='' ) {
 			$links = get_theme_mod('social-links', array());
 			if ( !empty( $links ) ) {
@@ -370,9 +370,9 @@ if ( ! function_exists( 'magazinertwo_social_links' ) ) {
 
 /*  Site name/logo
 /* ------------------------------------ */
-if ( ! function_exists( 'magazinertwo_site_title' ) ) {
+if ( ! function_exists( 'featureon_site_title' ) ) {
 
-	function magazinertwo_site_title() {
+	function featureon_site_title() {
 		
 		$custom_logo_id = get_theme_mod( 'custom_logo' );
 		$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
@@ -400,9 +400,9 @@ if ( ! function_exists( 'magazinertwo_site_title' ) ) {
 
 /*  Blog title
 /* ------------------------------------ */
-if ( ! function_exists( 'magazinertwo_blog_title' ) ) {
+if ( ! function_exists( 'featureon_blog_title' ) ) {
 
-	function magazinertwo_blog_title() {
+	function featureon_blog_title() {
 		global $post;
 		$heading = esc_html( get_theme_mod('blog-heading') );
 		$subheading = esc_html( get_theme_mod('blog-subheading') );
@@ -423,9 +423,9 @@ if ( ! function_exists( 'magazinertwo_blog_title' ) ) {
 
 /*  Related posts
 /* ------------------------------------ */
-if ( ! function_exists( 'magazinertwo_related_posts' ) ) {
+if ( ! function_exists( 'featureon_related_posts' ) ) {
 
-	function magazinertwo_related_posts() {
+	function featureon_related_posts() {
 		wp_reset_postdata();
 		global $post;
 
@@ -474,9 +474,9 @@ if ( ! function_exists( 'magazinertwo_related_posts' ) ) {
 
 /*  Get images attached to post
 /* ------------------------------------ */
-if ( ! function_exists( 'magazinertwo_post_images' ) ) {
+if ( ! function_exists( 'featureon_post_images' ) ) {
 
-	function magazinertwo_post_images( $args=array() ) {
+	function featureon_post_images( $args=array() ) {
 		global $post;
 
 		$defaults = array(
@@ -498,9 +498,9 @@ if ( ! function_exists( 'magazinertwo_post_images' ) ) {
 
 /*  Get featured post ids
 /* ------------------------------------ */
-if ( ! function_exists( 'magazinertwo_get_featured_post_ids' ) ) {
+if ( ! function_exists( 'featureon_get_featured_post_ids' ) ) {
 
-	function magazinertwo_get_featured_post_ids() {
+	function featureon_get_featured_post_ids() {
 		$args = array(
 			'category'		=> absint( get_theme_mod('featured-category','') ),
 			'numberposts'	=> absint( get_theme_mod('featured-posts-count','5')),
@@ -521,10 +521,10 @@ if ( ! function_exists( 'magazinertwo_get_featured_post_ids' ) ) {
 
 /*  Body class
 /* ------------------------------------ */
-if ( ! function_exists( 'magazinertwo_body_class' ) ) {
+if ( ! function_exists( 'featureon_body_class' ) ) {
 
-	function magazinertwo_body_class( $classes ) {
-		$classes[] = magazinertwo_layout_class();
+	function featureon_body_class( $classes ) {
+		$classes[] = featureon_layout_class();
 		if ( get_theme_mod( 'boxed','off' ) != 'on' ) { $classes[] = 'full-width'; }
 		if ( get_theme_mod( 'boxed','off' ) == 'on' ) { $classes[] = 'boxed'; }
 		if ( has_nav_menu( 'topbar' ) ) { $classes[] = 'topbar-enabled'; }
@@ -537,14 +537,14 @@ if ( ! function_exists( 'magazinertwo_body_class' ) ) {
 	}
 	
 }
-add_filter( 'body_class', 'magazinertwo_body_class' );
+add_filter( 'body_class', 'featureon_body_class' );
 
 
 /*  Excerpt ending
 /* ------------------------------------ */
-if ( ! function_exists( 'magazinertwo_excerpt_more' ) ) {
+if ( ! function_exists( 'featureon_excerpt_more' ) ) {
 
-	function magazinertwo_excerpt_more( $more ) {
+	function featureon_excerpt_more( $more ) {
 		if ( is_admin() ) {
 			return $more;
 		}
@@ -552,14 +552,14 @@ if ( ! function_exists( 'magazinertwo_excerpt_more' ) ) {
 	}
 	
 }
-add_filter( 'excerpt_more', 'magazinertwo_excerpt_more' );
+add_filter( 'excerpt_more', 'featureon_excerpt_more' );
 
 
 /*  Excerpt length
 /* ------------------------------------ */
-if ( ! function_exists( 'magazinertwo_excerpt_length' ) ) {
+if ( ! function_exists( 'featureon_excerpt_length' ) ) {
 
-	function magazinertwo_excerpt_length( $length ) {
+	function featureon_excerpt_length( $length ) {
 		if ( is_admin() ) {
 			return $length;
 		}
@@ -573,14 +573,14 @@ if ( ! function_exists( 'magazinertwo_excerpt_length' ) ) {
 	}
 	
 }
-add_filter( 'excerpt_length', 'magazinertwo_excerpt_length', 999 );
+add_filter( 'excerpt_length', 'featureon_excerpt_length', 999 );
 
 
 /*  Add responsive container to embeds
 /* ------------------------------------ */	
-if ( ! function_exists( 'magazinertwo_embed_html' ) ) {
+if ( ! function_exists( 'featureon_embed_html' ) ) {
 
-	function magazinertwo_embed_html( $html, $url ) {
+	function featureon_embed_html( $html, $url ) {
 		
 		$pattern    = '/^https?:\/\/(www\.)?twitter\.com/';
 		$is_twitter = preg_match( $pattern, $url );
@@ -593,19 +593,19 @@ if ( ! function_exists( 'magazinertwo_embed_html' ) ) {
 	}
 
 }
-add_filter( 'embed_oembed_html', 'magazinertwo_embed_html', 10, 3 );
+add_filter( 'embed_oembed_html', 'featureon_embed_html', 10, 3 );
 
 
 /*  Add responsive container to jetpack embeds
 /* ------------------------------------ */	
-if ( ! function_exists( 'magazinertwo_embed_html_jp' ) ) {
+if ( ! function_exists( 'featureon_embed_html_jp' ) ) {
 
-	function magazinertwo_embed_html_jp( $html ) {
+	function featureon_embed_html_jp( $html ) {
 		return '<div class="video-container">' . $html . '</div>';
 	}
 
 }
-add_filter( 'video_embed_html', 'magazinertwo_embed_html_jp' );
+add_filter( 'video_embed_html', 'featureon_embed_html_jp' );
 
 
 /* ------------------------------------------------------------------------- *
@@ -614,9 +614,9 @@ add_filter( 'video_embed_html', 'magazinertwo_embed_html_jp' );
 
 /*  Include or exclude featured articles in loop
 /* ------------------------------------ */
-if ( ! function_exists( 'magazinertwo_pre_get_posts' ) ) {
+if ( ! function_exists( 'featureon_pre_get_posts' ) ) {
 
-	function magazinertwo_pre_get_posts( $query ) {
+	function featureon_pre_get_posts( $query ) {
 		// Are we on main query ?
 		if ( !$query->is_main_query() ) return;
 		if ( $query->is_home() ) {
@@ -624,7 +624,7 @@ if ( ! function_exists( 'magazinertwo_pre_get_posts' ) ) {
 			// Featured posts enabled
 			if ( get_theme_mod('featured-posts-count','5') != '0' ) {
 				// Get featured post ids
-				$featured_post_ids = magazinertwo_get_featured_post_ids();
+				$featured_post_ids = featureon_get_featured_post_ids();
 				// Exclude posts
 				if ( $featured_post_ids && !get_theme_mod('featured-posts-include') )
 					$query->set('post__not_in', $featured_post_ids);
@@ -633,26 +633,26 @@ if ( ! function_exists( 'magazinertwo_pre_get_posts' ) ) {
 	}
 	
 }
-add_action( 'pre_get_posts', 'magazinertwo_pre_get_posts' );
+add_action( 'pre_get_posts', 'featureon_pre_get_posts' );
 
 
 /*  Script for no-js / js class
 /* ------------------------------------ */
-if ( ! function_exists( 'magazinertwo_html_js_class' ) ) {
+if ( ! function_exists( 'featureon_html_js_class' ) ) {
 
-	function magazinertwo_html_js_class () {
+	function featureon_html_js_class () {
 		echo '<script>document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>'. "\n";
 	}
 	
 }
-add_action( 'wp_head', 'magazinertwo_html_js_class', 1 );
+add_action( 'wp_head', 'featureon_html_js_class', 1 );
 
 
 /*  Admin panel css
 /* ------------------------------------ */
-if ( ! function_exists( 'magazinertwo_admin_panel_css' ) ) {
+if ( ! function_exists( 'featureon_admin_panel_css' ) ) {
 	
-	function magazinertwo_admin_panel_css() {
+	function featureon_admin_panel_css() {
 		global $pagenow;
 		if ( 'post.php' === $pagenow || 'post-new.php' === $pagenow ) {
 			echo '<style>
@@ -663,35 +663,35 @@ if ( ! function_exists( 'magazinertwo_admin_panel_css' ) ) {
 	}
 
 }
-add_action( 'admin_head', 'magazinertwo_admin_panel_css' );
+add_action( 'admin_head', 'featureon_admin_panel_css' );
 
 
 /*  TGM plugin activation
 /* ------------------------------------ */
-if ( ! function_exists( 'magazinertwo_plugins' ) ) {
+if ( ! function_exists( 'featureon_plugins' ) ) {
 	
-	function magazinertwo_plugins() {
+	function featureon_plugins() {
 		if ( get_theme_mod('recommended-plugins','on') =='on' ) { 	
 			// Add the following plugins
 			$plugins = array(
 				array(
-					'name' => esc_html__( 'Alx Extensions', 'magazinertwo' ),
+					'name' => esc_html__( 'Alx Extensions', 'featureon' ),
 					'slug' => 'alx-extensions',
 				),
 				array(
-					'name' => esc_html__( 'Meta Box', 'magazinertwo' ),
+					'name' => esc_html__( 'Meta Box', 'featureon' ),
 					'slug' => 'meta-box',
 				),
 				array(
-					'name' => esc_html__( 'Regenerate Thumbnails', 'magazinertwo' ),
+					'name' => esc_html__( 'Regenerate Thumbnails', 'featureon' ),
 					'slug' => 'regenerate-thumbnails',
 				),
 				array(
-					'name' => esc_html__( 'WP-PageNavi', 'magazinertwo' ),
+					'name' => esc_html__( 'WP-PageNavi', 'featureon' ),
 					'slug' => 'wp-pagenavi',
 				),
 				array(
-					'name' => esc_html__( 'Social Count Plus', 'magazinertwo' ),
+					'name' => esc_html__( 'Social Count Plus', 'featureon' ),
 					'slug' => 'social-count-plus',
 				)
 			);	
@@ -700,12 +700,12 @@ if ( ! function_exists( 'magazinertwo_plugins' ) ) {
 	}
 	
 }
-add_action( 'tgmpa_register', 'magazinertwo_plugins' );
+add_action( 'tgmpa_register', 'featureon_plugins' );
 
 
 /*  WooCommerce basic support
 /* ------------------------------------ */
-function magazinertwo_wc_wrapper_start() {
+function featureon_wc_wrapper_start() {
 	echo '<div id="subheader" class="group">';
 	echo '<div class="page-title group">';
 	echo '<div class="container pad">';
@@ -722,7 +722,7 @@ function magazinertwo_wc_wrapper_start() {
 	echo '<div class="content no-thumbnail">';
 	echo '<div class="bigpad group">';
 }
-function magazinertwo_wc_wrapper_end() {
+function featureon_wc_wrapper_end() {
 	echo '</div><!--/.bigpad-->';
 	echo '</div><!--/.content-->';
 	get_sidebar();
@@ -733,17 +733,17 @@ function magazinertwo_wc_wrapper_end() {
 }
 remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
-add_action('woocommerce_before_main_content', 'magazinertwo_wc_wrapper_start', 10);
-add_action('woocommerce_after_main_content', 'magazinertwo_wc_wrapper_end', 10);
+add_action('woocommerce_before_main_content', 'featureon_wc_wrapper_start', 10);
+add_action('woocommerce_after_main_content', 'featureon_wc_wrapper_end', 10);
 
 
 /*  Accessibility IE11 fix - https://git.io/vWdr2
 /* ------------------------------------ */
-function magazinertwo_skip_link_focus_fix() {
+function featureon_skip_link_focus_fix() {
 	?>
 	<script>
 	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
 	</script>
 	<?php
 }
-add_action( 'wp_print_footer_scripts', 'magazinertwo_skip_link_focus_fix' );
+add_action( 'wp_print_footer_scripts', 'featureon_skip_link_focus_fix' );

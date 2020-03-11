@@ -1,4 +1,4 @@
-=== MagazinerTwo ===
+=== Featureon ===
 Contributors: alxmedia
 Requires at least: 5.0
 Tested up to: 5.3.2
@@ -9,12 +9,12 @@ Tags: blog, one-column, two-columns, three-columns, right-sidebar, left-sidebar,
 
 == Description ==
 
-MagazinerTwo is a responsive 100% high resolution theme for blogs and magazines. Unique toggle sidebars give a great browsing and reading experience on both tablet and mobile. The feature list is long: Unlimited accent colors, unlimited widget areas, 0-2 sidebars to the left or right that can be uniquely specified for each page or post, 300px / 300px fixed width sidebars, 0-4 footer widget columns, almost zero layout images, related posts and post nav, featured stories and carousel, 5 post formats, good SEO, 2 flexible custom widgets, localisation support, social links, logo upload and many more useful admin panel features.
+Featureon is a responsive 100% high resolution theme for blogs and magazines. Unique toggle sidebars give a great browsing and reading experience on both tablet and mobile. The feature list is long: Unlimited accent colors, unlimited widget areas, 0-2 sidebars to the left or right that can be uniquely specified for each page or post, 300px / 300px fixed width sidebars, 0-4 footer widget columns, almost zero layout images, related posts and post nav, featured stories and carousel, 5 post formats, good SEO, 2 flexible custom widgets, localisation support, social links, logo upload and many more useful admin panel features.
 
 == Installation ==
 
 1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
-2. Type in MagazinerTwo in the search form and press the 'Enter' key on your keyboard.
+2. Type in Featureon in the search form and press the 'Enter' key on your keyboard.
 3. Click on the 'Activate' button to use your new theme right away.
 4. Navigate to Appearance > Customize in your admin panel and customize to taste.
 
@@ -24,8 +24,8 @@ http://alx.media/documentation/
 
 == Copyright ==
 
-MagazinerTwo WordPress Theme, Copyright 2018 AlxMedia
-MagazinerTwo is distributed under the terms of the GNU GPL
+Featureon WordPress Theme, Copyright 2018 AlxMedia
+Featureon is distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -37,7 +37,7 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
-MagazinerTwo bundles the following third-party resources:
+Featureon bundles the following third-party resources:
 
 Font Awesome, Copyright Dave Gandy
 License: SIL OFL 1.1 (Fonts); MIT (CSS)
@@ -106,7 +106,7 @@ Source: http://pixabay.com/
 * Added support for custom-header
 * Added support for custom-background
 * Updated meta dates to use wordpress settings
-* Changed function names from alx_ to magazinertwo_
+* Changed function names from alx_ to featureon_
 * Fixed undefined index notices/errors for Alx Tabs and Alx Posts widgets
 * Fixed all theme sniffer errors
 * Removed custom.css option, already exist in core
@@ -173,7 +173,7 @@ Source: http://pixabay.com/
 * Added new topbar menu
 
 = 2.0.0 - 2016-02-15 =
-* MagazinerTwo 2.0 redesign
+* Featureon 2.0 redesign
 * New home header design with carousel and featured entries
 * New footer design with carousel
 * New category pages with 5 most recent posts shown up top

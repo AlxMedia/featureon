@@ -5,9 +5,9 @@
 
 /*  Convert hexadecimal to rgb
 /* ------------------------------------ */
-if ( ! function_exists( 'magazinertwo_hex2rgb' ) ) {
+if ( ! function_exists( 'featureon_hex2rgb' ) ) {
 
-	function magazinertwo_hex2rgb( $hex, $array=false ) {
+	function featureon_hex2rgb( $hex, $array=false ) {
 		$hex = str_replace("#", "", $hex);
 
 		if ( strlen($hex) == 3 ) {
@@ -30,9 +30,9 @@ if ( ! function_exists( 'magazinertwo_hex2rgb' ) ) {
 
 /*  Google fonts
 /* ------------------------------------ */
-if ( ! function_exists( 'magazinertwo_enqueue_google_fonts' ) ) {
+if ( ! function_exists( 'featureon_enqueue_google_fonts' ) ) {
 
-	function magazinertwo_enqueue_google_fonts () {
+	function featureon_enqueue_google_fonts () {
 		if ( get_theme_mod('dynamic-styles', 'on') == 'on' ) {
 			if ( get_theme_mod( 'font' ) == 'titillium-web-ext' ) { wp_enqueue_style( 'titillium-web-ext', '//fonts.googleapis.com/css?family=Titillium+Web:400,400italic,300italic,300,600&subset=latin,latin-ext' ); }		
 			if ( get_theme_mod( 'font' ) == 'droid-serif' )	{ wp_enqueue_style( 'droid-serif', '//fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700' ); }				
@@ -57,19 +57,19 @@ if ( ! function_exists( 'magazinertwo_enqueue_google_fonts' ) ) {
 	}	
 	
 }
-add_action( 'wp_enqueue_scripts', 'magazinertwo_enqueue_google_fonts' );	
+add_action( 'wp_enqueue_scripts', 'featureon_enqueue_google_fonts' );	
 
 
 /*  Dynamic css output
 /* ------------------------------------ */
-if ( ! function_exists( 'magazinertwo_dynamic_css' ) ) {
+if ( ! function_exists( 'featureon_dynamic_css' ) ) {
 
-	function magazinertwo_dynamic_css() {
+	function featureon_dynamic_css() {
 		if ( get_theme_mod('dynamic-styles', 'on') == 'on' ) {
 		
 			// rgb values
 			$color_1 = get_theme_mod('color-1');
-			$color_1_rgb = magazinertwo_hex2rgb($color_1);
+			$color_1_rgb = featureon_hex2rgb($color_1);
 			
 			// start output
 			$styles = '';	
@@ -310,9 +310,9 @@ box-shadow: inset 1px 0 0 rgba(255,255,255,0.1); }
 			if ( get_theme_mod( 'header_textcolor' ) != '' ) {
 				$styles .= '.site-title a, .site-description { color: #'.esc_attr( get_theme_mod( 'header_textcolor' ) ).'; }'."\n";
 			}
-			wp_add_inline_style( 'magazinertwo-style', $styles );	
+			wp_add_inline_style( 'featureon-style', $styles );	
 		}
 	}
 	
 }
-add_action( 'wp_enqueue_scripts', 'magazinertwo_dynamic_css' );
+add_action( 'wp_enqueue_scripts', 'featureon_dynamic_css' );

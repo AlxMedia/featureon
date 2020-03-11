@@ -4,11 +4,11 @@
 	
 	<?php if ( have_comments() ) : global $wp_query; ?>
 	
-		<h3 class="heading"><?php comments_number( esc_html__( 'No Responses', 'magazinertwo' ), esc_html__( '1 Response', 'magazinertwo' ), esc_html__( '% Responses', 'magazinertwo' ) ); ?></h3>
+		<h3 class="heading"><?php comments_number( esc_html__( 'No Responses', 'featureon' ), esc_html__( '1 Response', 'featureon' ), esc_html__( '% Responses', 'featureon' ) ); ?></h3>
 	
 		<ul class="comment-tabs group">
-			<li class="active"><a href="#commentlist-container"><i class="fas fa-comments"></i><?php esc_html_e( 'Comments', 'magazinertwo' ); ?><span><?php echo count($wp_query->comments_by_type['comment']); ?></span></a></li>
-			<li><a href="#pinglist-container"><i class="fas fa-share"></i><?php esc_html_e( 'Pingbacks', 'magazinertwo' ); ?><span><?php echo count($wp_query->comments_by_type['pings']); ?></span></a></li>
+			<li class="active"><a href="#commentlist-container"><i class="fas fa-comments"></i><?php esc_html_e( 'Comments', 'featureon' ); ?><span><?php echo count($wp_query->comments_by_type['comment']); ?></span></a></li>
+			<li><a href="#pinglist-container"><i class="fas fa-share"></i><?php esc_html_e( 'Pingbacks', 'featureon' ); ?><span><?php echo count($wp_query->comments_by_type['pings']); ?></span></a></li>
 		</ul>
 
 		<?php if ( ! empty( $comments_by_type['comment'] ) ) { ?>

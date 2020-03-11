@@ -67,13 +67,13 @@
 							<?php if ( get_theme_mod( 'copyright' ) ): ?>
 								<p><?php echo esc_html( get_theme_mod( 'copyright' ) ); ?></p>
 							<?php else: ?>
-								<p><?php bloginfo(); ?> &copy; <?php echo esc_html( date_i18n( esc_html__( 'Y', 'magazinertwo' ) ) ); ?>. <?php esc_html_e( 'All Rights Reserved.', 'magazinertwo' ); ?></p>
+								<p><?php bloginfo(); ?> &copy; <?php echo esc_html( date_i18n( esc_html__( 'Y', 'featureon' ) ) ); ?>. <?php esc_html_e( 'All Rights Reserved.', 'featureon' ); ?></p>
 							<?php endif; ?>
 						</div><!--/#copyright-->
 						
 						<?php if ( get_theme_mod( 'credit', 'on' ) == 'on' ): ?>
 						<div id="credit">
-							<p><?php esc_html_e('Powered by','magazinertwo'); ?> <a href="http://wordpress.org" rel="nofollow">WordPress</a>. <?php esc_html_e('Theme by','magazinertwo'); ?> <a href="http://alx.media" rel="nofollow">Alx</a>.</p>
+							<p><?php esc_html_e('Powered by','featureon'); ?> <a href="http://wordpress.org" rel="nofollow">WordPress</a>. <?php esc_html_e('Theme by','featureon'); ?> <a href="http://alx.media" rel="nofollow">Alx</a>.</p>
 						</div><!--/#credit-->
 						<?php endif; ?>
 						
@@ -81,7 +81,7 @@
 					
 					<div class="grid one-half last">	
 						<?php if ( get_theme_mod( 'footer-social', 'on' ) == 'on' ): ?>
-							<?php magazinertwo_social_links() ; ?>
+							<?php featureon_social_links() ; ?>
 						<?php endif; ?>
 					</div>
 				

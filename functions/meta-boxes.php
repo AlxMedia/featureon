@@ -1,5 +1,5 @@
 <?php
-function magazinertwo_get_meta_box( $meta_boxes ) {
+function featureon_get_meta_box( $meta_boxes ) {
 	
 	/* do not show */
 	$prefix = '_';
@@ -18,7 +18,7 @@ function magazinertwo_get_meta_box( $meta_boxes ) {
 /* ------------------------------------ */	
 	$meta_boxes[] = array(
 		'id' => 'page-options',
-		'title' => esc_html__( 'Page Options', 'magazinertwo' ),
+		'title' => esc_html__( 'Page Options', 'featureon' ),
 		'post_types' => array( 'page' ),
 		'context' => 'advanced',
 		'priority' => 'high',
@@ -26,22 +26,22 @@ function magazinertwo_get_meta_box( $meta_boxes ) {
 		'fields' => array(
 			array(
 				'id' => $prefix . 'sidebar_primary',
-				'name' => esc_html__( 'Primary Sidebar', 'magazinertwo' ),
+				'name' => esc_html__( 'Primary Sidebar', 'featureon' ),
 				'type' => 'select',
-				'placeholder' => esc_html__( 'Select a sidebar', 'magazinertwo' ),
+				'placeholder' => esc_html__( 'Select a sidebar', 'featureon' ),
 				'options' => $sidebars_choices,
 			),
 			array(
 				'id' => $prefix . 'sidebar_secondary',
-				'name' => esc_html__( 'Secondary Sidebar', 'magazinertwo' ),
+				'name' => esc_html__( 'Secondary Sidebar', 'featureon' ),
 				'type' => 'select',
-				'placeholder' => esc_html__( 'Select a sidebar', 'magazinertwo' ),
+				'placeholder' => esc_html__( 'Select a sidebar', 'featureon' ),
 				'options' => $sidebars_choices,
 			),
 			array(
 				'id' => $prefix . 'layout',
 				'type' => 'image_select',
-				'name' => esc_html__( 'Layout', 'magazinertwo' ),
+				'name' => esc_html__( 'Layout', 'featureon' ),
 				'std' => 'inherit',
 				'force_delete' => false,
 				'max_file_uploads' => '4',
@@ -62,7 +62,7 @@ function magazinertwo_get_meta_box( $meta_boxes ) {
 /* ------------------------------------ */	
 	$meta_boxes[] = array(
 		'id' => 'post-options',
-		'title' => esc_html__( 'Post Options', 'magazinertwo' ),
+		'title' => esc_html__( 'Post Options', 'featureon' ),
 		'post_types' => array( 'post' ),
 		'context' => 'advanced',
 		'priority' => 'high',
@@ -70,22 +70,22 @@ function magazinertwo_get_meta_box( $meta_boxes ) {
 		'fields' => array(
 			array(
 				'id' => $prefix . 'sidebar_primary',
-				'name' => esc_html__( 'Primary Sidebar', 'magazinertwo' ),
+				'name' => esc_html__( 'Primary Sidebar', 'featureon' ),
 				'type' => 'select',
-				'placeholder' => esc_html__( 'Select a sidebar', 'magazinertwo' ),
+				'placeholder' => esc_html__( 'Select a sidebar', 'featureon' ),
 				'options' => $sidebars_choices,
 			),
 			array(
 				'id' => $prefix . 'sidebar_secondary',
-				'name' => esc_html__( 'Secondary Sidebar', 'magazinertwo' ),
+				'name' => esc_html__( 'Secondary Sidebar', 'featureon' ),
 				'type' => 'select',
-				'placeholder' => esc_html__( 'Select a sidebar', 'magazinertwo' ),
+				'placeholder' => esc_html__( 'Select a sidebar', 'featureon' ),
 				'options' => $sidebars_choices,
 			),
 			array(
 				'id' => $prefix . 'layout',
 				'type' => 'image_select',
-				'name' => esc_html__( 'Layout', 'magazinertwo' ),
+				'name' => esc_html__( 'Layout', 'featureon' ),
 				'std' => 'inherit',
 				'force_delete' => false,
 				'max_file_uploads' => '4',
@@ -105,4 +105,4 @@ function magazinertwo_get_meta_box( $meta_boxes ) {
 	
 	return $meta_boxes;
 }
-add_filter( 'rwmb_meta_boxes', 'magazinertwo_get_meta_box' );
+add_filter( 'rwmb_meta_boxes', 'featureon_get_meta_box' );

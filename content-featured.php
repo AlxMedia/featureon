@@ -1,6 +1,6 @@
 <?php $format = get_post_format(); ?>
 
-<div class="featured-item" style="background-image:url('<?php the_post_thumbnail_url('magazinertwo-large'); ?>');">
+<div class="featured-item" style="background-image:url('<?php the_post_thumbnail_url('featureon-large'); ?>');">
 	<a class="featured-link" href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 	<div class="featured-content">
 		<div class="featured-category"><?php the_category(' '); ?></div>

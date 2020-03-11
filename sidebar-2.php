@@ -1,8 +1,8 @@
-<?php $sidebar = magazinertwo_sidebar_secondary(); ?>
+<?php $sidebar = featureon_sidebar_secondary(); ?>
 
 <div class="sidebar s2">
 	
-	<a class="sidebar-toggle" title="<?php esc_attr_e('Expand Sidebar','magazinertwo'); ?>"><i class="fa icon-sidebar-toggle"></i></a>
+	<a class="sidebar-toggle" title="<?php esc_attr_e('Expand Sidebar','featureon'); ?>"><i class="fa icon-sidebar-toggle"></i></a>
 	
 	<div class="sidebar-content">
 			
