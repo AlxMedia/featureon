@@ -689,10 +689,6 @@ if ( ! function_exists( 'featureon_plugins' ) ) {
 				array(
 					'name' => esc_html__( 'WP-PageNavi', 'featureon' ),
 					'slug' => 'wp-pagenavi',
-				),
-				array(
-					'name' => esc_html__( 'Social Count Plus', 'featureon' ),
-					'slug' => 'social-count-plus',
 				)
 			);	
 			tgmpa( $plugins );
