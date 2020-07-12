@@ -71,6 +71,7 @@ Source: http://pixabay.com/
 
 = 2.3.9 - 2020-07-12 =
 * Updated to Kirki 3.1.4
+* Removed Social Count Plus as recommended plugin
 
 = 2.3.8 - 2020-03-25 =
 * Fixed Chrome overflow issue
