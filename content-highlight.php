@@ -7,7 +7,7 @@
 		<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'featureon-medium' ); ?>
 		<img src="<?php echo $image[0]; ?>" alt="<?php the_title_attribute(); ?>" />
 	<?php elseif ( get_theme_mod('placeholder','on') == 'on' ): ?>
-		<img src="<?php echo get_template_directory_uri(); ?>/img/thumb-medium.png" alt="<?php the_title_attribute(); ?>" />
+		<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/thumb-medium.png" alt="<?php the_title_attribute(); ?>" />
 	<?php endif; ?>
 	
 	<div class="featured-content">
