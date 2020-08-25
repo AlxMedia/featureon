@@ -164,7 +164,8 @@
 	#header .pad { padding: 0; }
 	.site-title { width: 100%; float: none; }
 	.site-title a { text-align: center; }
-	.toggle-search { margin-right: 0; top: 81px; left: -1px; right: auto; padding-top: 13px; padding-bottom: 13px; }
+	.toggle-search { margin-right: 0; top: 81px; left: -1px; right: auto; padding-top: 11px; padding-bottom: 12px; border: 0; }
+	.toggle-search.active { padding-top: 13px; padding-bottom: 14px; }
 	.search-expand { width: 100%; margin-right: -30px; top: 131px; }
 		
 	/* footer */
