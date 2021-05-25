@@ -98,8 +98,10 @@ add_action( 'after_setup_theme', 'featureon_setup' );
 
 /*  Custom navigation
 /* ------------------------------------ */
-add_action( 'wp', function() {
+if ( ! class_exists( '\Featureon\Nav' ) ) {
 	require_once 'functions/nav.php';
+}
+add_action( 'wp', function() {
 	$nav = new \Featureon\Nav();
 	$nav->enqueue(
 		[
