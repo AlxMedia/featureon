@@ -74,6 +74,9 @@ Source: https://stocksnap.io
 
 == Changelog ==
 
+= 2.4.6 - 2021-07-19 =
+* Updated to Kirki 3.1.9
+
 = 2.4.5 - 2021-07-03 =
 * Updated to Kirki 3.1.8
 
