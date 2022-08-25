@@ -10,7 +10,7 @@
 		$loop_featured = new WP_Query(
 			array(
 				'category_name' => $cat_name,
-				'posts_per_page' => get_theme_mod( 'featured-posts-count-category', '4' ),
+				'posts_per_page' => get_theme_mod( 'featured-posts-count-category', '5' ),
 			));
 		$ids = array();
 	?>

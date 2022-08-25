@@ -4,11 +4,11 @@ Requires at least: 5.0
 Tested up to: 6.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
-Tags: blog, one-column, two-columns, three-columns, right-sidebar, left-sidebar, custom-colors, custom-menu, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, custom-logo, custom-header, custom-background
+Tags: blog, one-column, two-columns, three-columns, right-sidebar, left-sidebar, custom-colors, custom-menu, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, custom-logo, custom-header, custom-background, news, entertainment, footer-widgets
 
 == Description ==
 
-Featureon is a responsive 100% high resolution theme for blogs and magazines. Unique toggle sidebars give a great browsing and reading experience on both tablet and mobile. The feature list is long: Unlimited accent colors, unlimited widget areas, 0-2 sidebars to the left or right that can be uniquely specified for each page or post, 300px / 300px fixed width sidebars, 0-4 footer widget columns, almost zero layout images, related posts and post nav, featured stories and carousel, 5 post formats, good SEO, 2 flexible custom widgets, localisation support, social links, logo upload and many more useful admin panel features.
+Featureon is a responsive 100% high resolution theme for blogs and magazines. Unique toggle sidebars give a great browsing and reading experience on both tablet and mobile. The feature list is long: Unlimited accent colors, 0-2 sidebars to the left or right that can be uniquely specified for each page or post, 300px / 300px fixed width sidebars, 0-4 footer widget columns, almost zero layout images, related posts and post nav, featured stories and carousel, 5 post formats, good SEO, localisation support, social links, logo upload and many more useful admin panel features. Demo: http://demo.alx.media/x/?theme=Featureon
 
 == Installation ==
 
@@ -72,7 +72,25 @@ Screenshot images
 License: CC0 1.0 Universal (CC0 1.0)
 Source: https://stocksnap.io
 
+Header images
+1. https://stocksnap.io/photo/TNK87N7464 - CC0 1.0 Universal (CC0 1.0)
+2. https://stocksnap.io/photo/SA20YXQRC4 - CC0 1.0 Universal (CC0 1.0)
+3. https://stocksnap.io/photo/RKS9M8PY0X - CC0 1.0 Universal (CC0 1.0)
+4. https://stocksnap.io/photo/EPNK1H7KBP - CC0 1.0 Universal (CC0 1.0)
+5. https://stocksnap.io/photo/E4PSRGAB8Y - CC0 1.0 Universal (CC0 1.0)
+
+Subheader images
+1. https://stocksnap.io/photo/UEQ0178WUT - CC0 1.0 Universal (CC0 1.0)
+2. https://stocksnap.io/photo/IUJP9OI22I - CC0 1.0 Universal (CC0 1.0)
+3. https://stocksnap.io/photo/693PZB7YZT - CC0 1.0 Universal (CC0 1.0)
+4. https://stocksnap.io/photo/CLCT9SWF9E - CC0 1.0 Universal (CC0 1.0)
+5. https://stocksnap.io/photo/13LKG0AGI0 - CC0 1.0 Universal (CC0 1.0)
+6. https://stocksnap.io/photo/1C1A9389B4 - CC0 1.0 Universal (CC0 1.0)
+
 == Changelog ==
+
+= 2.5.0 - 2022-08-25 =
+* Changed theme from premium to free
 
 = 2.4.9 - 2022-05-30 =
 * Fixed ol and ul box-sizing content-box styling for WP 6.0

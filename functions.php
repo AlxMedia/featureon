@@ -14,12 +14,6 @@
 // Load Kirki
 include( get_template_directory() . '/functions/kirki/kirki.php' );
 
-// Load theme updater functions
-function featureon_theme_updater() {
-	require( get_template_directory() . '/functions/updater/theme-updater.php' );
-}
-add_action( 'after_setup_theme', 'featureon_theme_updater' );
-
 if ( ! function_exists( 'featureon_load' ) ) {
 	
 	function featureon_load() {
