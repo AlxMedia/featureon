@@ -8,7 +8,7 @@ Tags: blog, one-column, two-columns, three-columns, right-sidebar, left-sidebar,
 
 == Description ==
 
-Featureon is a responsive 100% high resolution theme for blogs and magazines. Unique toggle sidebars give a great browsing and reading experience on both tablet and mobile. The feature list is long: Unlimited accent colors, 0-2 sidebars to the left or right that can be uniquely specified for each page or post, 300px / 300px fixed width sidebars, 0-4 footer widget columns, almost zero layout images, related posts and post nav, featured stories and carousel, 5 post formats, good SEO, localisation support, social links, logo upload and many more useful admin panel features. Demo: http://demo.alx.media/x/?theme=Featureon
+Featureon is a flexible theme for blogs and magazines. Unique toggle sidebars give a great browsing and reading experience on both tablet and mobile. With plenty of included options, you can configure this theme just as you want it. Demo: http://demo.alx.media/x/?theme=Featureon
 
 == Installation ==
 
@@ -88,6 +88,9 @@ Subheader images
 6. https://stocksnap.io/photo/1C1A9389B4 - CC0 1.0 Universal (CC0 1.0)
 
 == Changelog ==
+
+= 2.5.3 - 2022-08-25 =
+* Changed theme description
 
 = 2.5.2 - 2022-08-25 =
 * Added theme options links
