@@ -89,6 +89,10 @@ Subheader images
 
 == Changelog ==
 
+= 2.5.1 - 2022-08-25 =
+* Fixed underline links
+* Fixed header focus priority
+
 = 2.5.0 - 2022-08-25 =
 * Changed theme from premium to free
 

@@ -1,7 +1,7 @@
 /*
 Theme Name: Featureon
 Theme URI: http://alx.media/themes/featureon/
-Version: 2.5.0
+Version: 2.5.1
 Requires at least: 5.0
 Requires PHP: 5.6
 Tested up to: 6.0
@@ -234,6 +234,7 @@ input, textarea, button, select, label { font-family: inherit; }
 /* ------------------------------------ */
 .entry { font-size: 17px; line-height: 1.6em; }
 .entry.excerpt { font-size: 16px; color: #777; }
+.entry a { text-decoration: underline; }
 .entry p,
 .entry dd { margin-bottom: 1em; }
 .entry dt { color: #333; }
@@ -593,9 +594,9 @@ box-shadow: 0 1px 0 rgba(255,255,255,0.1); }
 .toggle-search .svg-icon { fill: #333; margin: 0 auto; }
 .toggle-search #svg-close { display: none; }
 .toggle-search.active #svg-search { display: none; }
-.toggle-search.active #svg-close { display: block; fill: rgba(0,0,0,0.4); }
+.toggle-search.active #svg-close { display: block; fill: rgba(0,0,0,0.6); }
 .toggle-search:focus #svg-search,
-.toggle-search:focus #svg-close { fill: rgba(0,0,0,0.6); }
+.toggle-search:focus #svg-close { fill: rgba(0,0,0,0.4); }
 
 
 /* ------------------------------------------------------------------------- *
