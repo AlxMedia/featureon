@@ -89,6 +89,10 @@ Subheader images
 
 == Changelog ==
 
+= 2.5.2 - 2022-08-25 =
+* Added theme options links
+* Updated language files
+
 = 2.5.1 - 2022-08-25 =
 * Fixed underline links
 * Fixed header focus priority

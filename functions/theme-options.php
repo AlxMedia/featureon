@@ -10,6 +10,24 @@ Kirki::add_config( 'featureon', array(
 	'option_type'   => 'theme_mod',
 ) );
 
+/*  Add Links
+/* ------------------------------------ */
+Kirki::add_section( 'morelink', array(
+	'title'       => esc_html__( 'AlxMedia', 'featureon' ),
+	'type'        => 'link',
+	'button_text' => esc_html__( 'View More Themes', 'featureon' ),
+	'button_url'  => 'http://alx.media/themes/',
+	'priority'    => 13,
+) );
+Kirki::add_section( 'reviewlink', array(
+	'title'       => esc_html__( 'Like This Theme?', 'featureon' ),
+	'panel'       => 'options',
+	'type'        => 'link',
+	'button_text' => esc_html__( 'Write a Review', 'featureon' ),
+	'button_url'  => 'https://wordpress.org/support/theme/featureon/reviews/#new-post',
+	'priority'    => 1,
+) );
+
 /*  Add Panels
 /* ------------------------------------ */
 Kirki::add_panel( 'options', array(
