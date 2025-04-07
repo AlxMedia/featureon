@@ -8,7 +8,7 @@ Tags: blog, one-column, two-columns, three-columns, right-sidebar, left-sidebar,
 
 == Description ==
 
-Featureon is a flexible theme for blogs and magazines. Unique toggle sidebars give a great browsing and reading experience on both tablet and mobile. With plenty of included options, you can configure this theme just as you want it. Demo: http://demo.alx.media/x/?theme=Featureon
+Featureon is a flexible theme for blogs and magazines. Unique toggle sidebars give a great browsing and reading experience on both tablet and mobile. With plenty of included options, you can configure this theme just as you want it. Demo: https://demo.agnarson.com/?theme=Featureon
 
 == Installation ==
 
@@ -19,7 +19,7 @@ Featureon is a flexible theme for blogs and magazines. Unique toggle sidebars gi
 
 == Documentation ==
 
-http://alx.media/documentation/
+https://agnarson.com/documentation/
 
 == Copyright ==
 
