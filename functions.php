@@ -757,3 +757,16 @@ function featureon_skip_link_focus_fix() {
 	<?php
 }
 add_action( 'wp_print_footer_scripts', 'featureon_skip_link_focus_fix' );
+
+
+/*  Kirki deprecated fix
+/* ------------------------------------ */
+function featureon_kirki_config( $config ) {
+
+	if ( isset( $config['compiler'] ) ) {
+		unset( $config['compiler'] );
+	}
+
+	return $config;
+}
+add_filter( 'kirki/config', 'featureon_kirki_config', 999 );
